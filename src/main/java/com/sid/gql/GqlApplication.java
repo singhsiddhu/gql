@@ -7,9 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class GqlApplication {
-	private static final Logger LOG = LoggerFactory.getLogger(GqlApplication.class);
-	public static void main(String[] args) {
-		LOG.debug("Main -> Run");
-		SpringApplication.run(GqlApplication.class, args);
-	}
+    private static final Logger LOG = LoggerFactory.getLogger(GqlApplication.class);
+
+    public static void main(String[] args) {
+        LOG.debug("Main -> Run");
+        SpringApplication.run(GqlApplication.class, args);
+    }
 }

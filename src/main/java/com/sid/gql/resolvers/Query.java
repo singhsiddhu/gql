@@ -1,13 +1,12 @@
 package com.sid.gql.resolvers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.stereotype.Component;
-
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.sid.gql.entities.Pet;
 import com.sid.gql.enums.Animal;
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class Query implements GraphQLQueryResolver {
@@ -15,7 +14,7 @@ public class Query implements GraphQLQueryResolver {
         List<Pet> pets = new ArrayList<>();
 
         Pet aPet = new Pet();
-        aPet.setId(1l);
+        aPet.setId(1L);
         aPet.setName("Bill");
         aPet.setAge(9);
         aPet.setType(Animal.MAMMOTH);
